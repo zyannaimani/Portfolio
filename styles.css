@@ -1,0 +1,389 @@
+/*--------GLOBAL STYLES--------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #333;
+    padding: 15px;
+    display: block;
+    color:white;
+    display: inline-block;
+}
+
+.hide{
+    display: none;
+}
+
+/*--------HEADER--------*/
+nav{
+    position: fixed;
+    padding: 15px;
+    width: 100%;
+    top: 0%;
+    background-color:white;
+    z-index: 2;
+}
+
+.nav-container{
+    width: 90vw;
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.menu-link{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 20px;
+    color: #6e6d6d;
+}
+
+.menu-link:hover{
+    color: #080808;
+    border-bottom:solid 1px #080808;
+}
+
+.contact-btn{
+    border: 2px solid #dd48b4;
+    color: #dd48b4
+}
+
+.contact-btn:hover{
+    border: 2px solid #ff00b8;
+    color: #ff00b8;
+    font-size: 1.25rem;
+}
+
+/*--------HEADER--------*/
+.hero{
+    margin-top: 190px;
+    margin-bottom: 210px;
+}
+
+.hero-container{
+    width: 90vw;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero-name{
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.hero-bio-intro{
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.hero-view-portfolio-btn{
+    padding: 20px 15px;
+    font-size: 1.3rem;
+    background-color: #e26ac0;
+}
+
+.hero-view-portfolio-btn:hover{
+    background-color: #e93eb9;
+}
+
+.hero-portfolio-img-wrap{
+    display: flex;
+}
+
+.portfolio-img{
+    height: 253px;
+    width: 232px;
+    z-index: 1;
+}
+
+.portfolio-img-bg{
+    width: 250px;
+    height: 260px;
+    background-color: #ee90d4;
+    margin:-20px 0px 0px -230px;
+}
+
+/*--------PORTFOLIO SECTION--------*/
+
+.portfolio-container{
+    width: 90vw;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.portfolio-heading{
+    font-size: 1.4rem;
+    color: #61585f;
+}
+
+.project-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-info{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.project-skills-used-wrapper{
+    margin-top: 20px;
+    color:#5f5f5f;
+    margin-bottom: 10px;
+
+}
+
+.project-skills-used-heading{
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+    color:#5f5f5f;
+}
+
+.skills-used p{
+    color:#5f5f5f;
+}
+
+.project-btn{
+    padding: 9px 15px;
+    color:#e26e95;
+    border: solid 1px #e26e95 ;
+    margin-right: 20px;
+    background-color: transparent;
+}
+
+.project-btn:hover{
+    color: #d62c65;
+    border: solid 1px  #d62c65;
+    font-size: 1.11rem;
+}
+
+.project-thumbnail-img.sca-shopify-thumbnail{
+    width: 330px;
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-name{
+        font-size: 3.4rem;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    
+    .hero-bio-intro{
+        font-size: 1.3rem;
+        line-height: 27px;
+    }
+
+    .hero-view-portfolio-btn{
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero{
+        margin-bottom: 170px;
+    }    
+
+    .hero-bio-intro{
+        font-size: 1.35em;
+        line-height: 24px;
+        margin-right: 10px;
+    }
+
+    .portfolio-img{
+        width: 200px;
+        height: 220px;
+    }
+
+    .portfolio-img-bg{
+        width: 200px;
+        height: 220px;
+        margin:-15px 0px 0px -180px;
+    }    
+
+    .hero-view-portfolio-btn{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 1.1rem;
+    }
+
+    .project-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .project-thumbnail-img.sca-shopify-thumbnail{
+        width: 280px;
+    }
+
+    .project-info-content.mobile{
+        text-align: center;
+    }
+
+    .project-btn{
+        margin-top: 10px;
+    }
+
+    @media only screen and (max-width: 767px) {
+    .hero{
+        margin-bottom: 170px;
+    }    
+
+    .hero-bio-intro{
+        font-size: 1.35em;
+        line-height: 24px;
+        margin-right: 10px;
+    }
+
+    .portfolio-img{
+        width: 200px;
+        height: 220px;
+    }
+
+    .portfolio-img-bg{
+        width: 200px;
+        height: 220px;
+        margin:-15px 0px 0px -180px;
+    }    
+
+    .hero-view-portfolio-btn{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 1.1rem;
+    }
+
+    .project-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .project-thumbnail-img.sca-shopify-thumbnail{
+        width: 280px;
+    }
+
+    .project-info-content.mobile{
+        text-align: center;
+    }
+
+    .project-btn{
+        margin-top: 10px;
+    }
+
+@media only screen and (max-width: 649px) {
+    .hero-name{
+        font-size: 2.8rem;
+    }
+
+    .hero-bio-intro{
+        font-size: 1rem;
+    }
+
+    .hero-view-portfolio-btn{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .portfolio-img{
+        width: 180px;
+        height: 200px;
+    }
+
+    .portfolio-img-bg{
+        width: 180px;
+        height: 200px;
+        margin:-13px 0px 0px -168px;
+    }
+
+@media only screen and (max-width: 500px) {
+    .hero-name{
+        font-size: 2.8rem;
+    }
+
+    .hero-bio-intro{
+        font-size: 1rem;
+    }
+
+    .hero-portfolio-img-wrap{
+        display: none;
+    }       
+
+    .project-thumbnail-img.sca-shopify-thumbnail{
+        width: 260px;
+    }
+
+    .project-title{
+        font-size: 1.5rem;
+    }
+
+    .project-info{
+        font-size: 1rem;
+    }
+
+    .project-skills-used-heading{
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+
+    .skills-used{
+        font-size: .8rem;
+    }
+    
+    .project-btn{
+        padding: 6px 8px;
+        font-size: .8rem;
+        margin-right: 5px;
+
+    }
+    
+    .project-btn:hover{
+
+        font-size: .9rem;
+    }
+    
+    .project-thumbnail-img.sca-shopify-thumbnail{
+        width: 330px;
+    }  
+}
