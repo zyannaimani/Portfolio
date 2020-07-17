@@ -155,8 +155,19 @@ nav{
 
 /*-------- START OF ABOUT ME SECTION --------*/
 
+    .about-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-content{
+        margin-right: 20px;
+        text-align: center;
+    }
+
     .about-tagline{
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 500;
         margin-top: 80px;
         margin-bottom: 20px;
@@ -171,12 +182,17 @@ nav{
     .specialties-wrap{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width: 50%;
+        margin: auto;
     }
 
     .specialty{
         font-size: 1.3rem;
         padding: 10px;
+        text-align: center;
+    }
+
+    .about-img{
+        width: 350px;
     }
 
     .about-section-divide{
@@ -437,6 +453,17 @@ footer{
 
 
 @media (max-width: 850px) {
+
+    
+    /*-------- START OF ABOUT ME SECTION --------*/
+
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     
     .project-thumbnail-img{
         width: 100%;
@@ -565,6 +592,11 @@ footer{
     .specialty{
         font-size: 1rem;
         padding: 10px;
+    }
+
+    .about-img{
+        width: 288px;
+        margin-top: 20PX;
     }
 
     .about-section-divide{
@@ -745,6 +777,10 @@ footer{
     .specialty{
         font-size: .9rem;
         padding: 10px;
+    }
+
+    .about-img{
+        width: 228px;
     }
 
     .about-section-divide{
