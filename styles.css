@@ -31,7 +31,7 @@ a{
 
 hr{
     opacity: .4;
-    width: 90vw;
+    width: 90%;
     margin: auto;
 }
 
@@ -129,6 +129,9 @@ nav{
     box-shadow: 0 14px 28px rgba(160, 157, 157, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.hero-portfolio-img-wrap:nth-child(1){
+    display: none;
+}
 
 .portfolio-img{
     width: 350px;
@@ -331,159 +334,669 @@ footer{
 
 /*-------- MEDIA QUERIES --------*/
 
-@media (max-width: 1824px) {
-    .container{
-        width: 70vw;
-        margin: auto;
-    }
-    
-}
+@media (max-width: 1024px) {
 
-
-@media only screen and (max-width: 991px) {
-    .hero-name{
-        font-size: 3.4rem;
-        font-weight: 800;
-        margin-bottom: 10px;
-    }
-    
-    .hero-bio-intro{
-        font-size: 1.3rem;
-        line-height: 27px;
+    .about-tagline{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: 80px;
+        margin-bottom: 20px;
     }
 
-    .hero-view-portfolio-btn{
-        padding-top: 17px;
-        padding-bottom: 17px;
+
+    .contact-title{
+        font-size: 2.7rem;
+        font-weight: 300;
+        padding-top: 50px;
+        margin-bottom: 1px;
+        text-align: center;
+        color: white;
     }
 }
 
-@media only screen and (max-width: 767px) {
+
+@media (max-width: 992px) {
+
+    /*-------- START OF HERO SECTION --------*/
     .hero{
-        margin-bottom: 170px;
-    }    
+        margin-top:70px;
+        margin-bottom: 150px;
+    }
+
+    .hero-container{
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hero-name{
+        font-size: 4.5rem;
+        font-weight: 800;
+        animation: hero-name .8s forwards 0s linear;
+    }
+
+    @keyframes hero-name{
+        0%{
+            transform: rotate(0) translateX(-200px);
+            opacity: 0;
+            }
+        100%{
+            transform: rotate(0) translateX(0);
+            opacity: 1;
+            }
+    }
 
     .hero-bio-intro{
-        font-size: 1.35em;
-        line-height: 24px;
-        margin-right: 10px;
+        font-size: 1.7rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+
+    .contact-me-btn{
+        padding: 20px 25px;
+        font-size: 1.3rem;
+        background-color: #f8049c;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s ease-in-out;
+        margin-right: 20px;
+        border-radius: 50px;
+    }
+
+    .contact-me-btn:hover{
+        background-color: #fdd54f;
+        box-shadow: 0 14px 28px rgba(160, 157, 157, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .view-portfolio-btn{
+        border: 2px solid #f8049c;
+        background-color: white;
+        padding: 20px 25px;
+        font-size: 1.3rem;
+        color: #f8049c;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s ease-in-out;
+        border-radius: 50px;
+    }
+
+    .view-portfolio-btn:hover{
+        border: 2px solid #fdd54f;
+        color: #fdd54f;
+        box-shadow: 0 14px 28px rgba(160, 157, 157, 0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
 
     .portfolio-img{
-        width: 200px;
-        height: 220px;
+        width: 310px;
+        height:310px;
+        z-index: 1;
+        border-radius: 40%;
+        animation: portfolio-img 1s forwards 0s ease-in-out;
+    }
+}
+
+
+@media (max-width: 850px) {
+    
+    .project-thumbnail-img{
+        width: 100%;
+        height: 480px;
     }
 
-    .portfolio-img-bg{
-        width: 200px;
-        height: 220px;
-        margin:-15px 0px 0px -180px;
-    }    
+    .contact-title{
+        font-size: 2.2rem;
+        font-weight: 300;
+        padding-top: 50px;
+        margin-bottom: 1px;
+        text-align: center;
+        color: white;
+    }
+    
+    .contact-opener{
+        font-size: 1.4rem;
+        font-weight: 100;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.801);
+    }
+}
 
-    .hero-view-portfolio-btn{
-        padding-top: 12px;
-        padding-bottom: 12px;
+
+@media only screen and (max-width: 768px) {
+
+    /*-------- START OF HERO SECTION --------*/
+    .hero{
+        margin-top:70px;
+        margin-bottom: 150px;
+    }
+
+    .hero-container{
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hero-name{
+        font-size: 3.7rem;
+        font-weight: 800;
+        animation: hero-name .8s forwards 0s linear;
+    }
+
+    @keyframes hero-name{
+        0%{
+            transform: rotate(0) translateX(-200px);
+            opacity: 0;
+            }
+        100%{
+            transform: rotate(0) translateX(0);
+            opacity: 1;
+            }
+    }
+
+    .hero-bio-intro{
+        font-size: 1.6rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+
+    .contact-me-btn{
+        padding: 20px 25px;
         font-size: 1.1rem;
+        background-color: #f8049c;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s ease-in-out;
+        margin-right: 20px;
+        border-radius: 50px;
     }
 
-    .project-wrap{
+    .contact-me-btn:hover{
+        background-color: #fdd54f;
+        box-shadow: 0 14px 28px rgba(160, 157, 157, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .view-portfolio-btn{
+        border: 2px solid #f8049c;
+        background-color: white;
+        padding: 20px 25px;
+        font-size: 1.1rem;
+        color: #f8049c;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s ease-in-out;
+        border-radius: 50px;
+    }
+
+    .view-portfolio-btn:hover{
+        border: 2px solid #fdd54f;
+        color: #fdd54f;
+        box-shadow: 0 14px 28px rgba(160, 157, 157, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .portfolio-img{
+        width: 270px;
+        height:270px;
+        z-index: 1;
+        border-radius: 40%;
+        animation: portfolio-img 1s forwards 0s ease-in-out;
+    }
+
+
+    /*-------- START OF ABOUT ME SECTION --------*/
+
+    .about-tagline{
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .specialties-list{
+        font-size: 1.7rem;
+        margin-top: 15px;
+        margin-bottom: 9px;
+    }
+
+    .specialties-wrap{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 50%;
+    }
+
+    .specialty{
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .about-section-divide{
+        margin-top: 80px;
+    }
+
+
+    /*--------PORTFOLIO SECTION STYLES -----*/
+
+    .portfolio{
+        margin-top: 40px;
+        display: flex;
+    }
+
+    .project{
+        margin-bottom: 80px;
+    }
+
+    .project-info-content{
         display: flex;
         flex-direction: column;
-    }
-
-    .desktop{
-        display: none;
-    }
-
-    .mobile{
-        display: block;
-    }
-
-    .project-thumbnail-img.sca-shopify-thumbnail{
-        width: 280px;
-    }
-
-    .project-info-content.mobile{
-        text-align: center;
-    }
-
-    .project-btn{
-        margin-top: 10px;
-    }
-    
-
-@media only screen and (max-width: 649px) {
-    .hero-name{
-        font-size: 2.8rem;
-    }
-
-    .hero-bio-intro{
-        font-size: 1rem;
-    }
-
-    .hero-view-portfolio-btn{
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .portfolio-img{
-        width: 180px;
-        height: 200px;
-    }
-
-    .portfolio-img-bg{
-        width: 180px;
-        height: 200px;
-        margin:-13px 0px 0px -168px;
-    }
-
-@media only screen and (max-width: 500px) {
-    .hero-name{
-        font-size: 2.8rem;
-    }
-
-    .hero-bio-intro{
-        font-size: 1rem;
-    }
-
-    .hero-portfolio-img-wrap{
-        display: none;
-    }       
-
-    .project-thumbnail-img.sca-shopify-thumbnail{
-        width: 260px;
+        justify-content: center;
+        align-items: center;
     }
 
     .project-title{
-        font-size: 1.5rem;
+        font-size: 2.1rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 50px;
     }
-
+    
     .project-info{
-        font-size: 1rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
-    .project-skills-used-heading{
-        font-size: 1rem;
-        margin-bottom: 6px;
+    .project-thumbnail-img{
+        width: 100%;
+        height: 467px;
     }
 
-    .skills-used{
-        font-size: .8rem;
+    .project-btns-wrap{
+        margin-bottom: 50px;
     }
     
     .project-btn{
-        padding: 6px 8px;
-        font-size: .8rem;
-        margin-right: 5px;
-
+        padding: 10px 32px;
+        color:#e26e95;
+        border: solid 1px #e26e95 ;
+        background-color: transparent;
+        margin: 3px 20px;
+        font-size: 1rem;
+        box-shadow: 0 1px 3px rgba(179, 178, 178, 0.12), 0 1px 2px rgba(121, 118, 118, 0.24);
+        transition: all 0.3s ease-in-out;
     }
     
     .project-btn:hover{
+        background-color:  #e26e95 ;
+        color: white;
+        box-shadow: 0 14px 28px rgba(173, 173, 173, 0.25), 0 10px 10px rgba(141, 141, 141, 0.22);
+    }
+}
+    
 
+@media only screen and (max-width: 650px) {
+
+    /*-------- START OF HERO SECTION --------*/
+    .hero{
+        margin-top:50px;
+        margin-bottom: 150px;
+    }
+
+    .hero-container{
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-name{
+        font-size: 3.9rem;
+        font-weight: 800;
+        animation: hero-name .8s forwards 0s linear;
+    }
+
+    @keyframes hero-name{
+        0%{
+            transform: rotate(0) translateX(-200px);
+            opacity: 0;
+            }
+        100%{
+            transform: rotate(0) translateX(0);
+            opacity: 1;
+            }
+    }
+
+    .hero-bio-intro{
+        font-size: 1.6rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .hero-btns{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-me-btn{
+        padding: 20px 25px;
+        font-size: 1.1rem;
+        background-color: #f8049c;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s ease-in-out;
+        margin-right: 20px;
+        border-radius: 50px;
+    }
+
+    .contact-me-btn:hover{
+        background-color: #fdd54f;
+        box-shadow: 0 14px 28px rgba(160, 157, 157, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .view-portfolio-btn{
+        border: 2px solid #f8049c;
+        background-color: white;
+        padding: 20px 25px;
+        font-size: 1.1rem;
+        color: #f8049c;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s ease-in-out;
+        border-radius: 50px;
+    }
+
+    .view-portfolio-btn:hover{
+        border: 2px solid #fdd54f;
+        color: #fdd54f;
+        box-shadow: 0 14px 28px rgba(160, 157, 157, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .hero-portfolio-img-wrap:nth-child(1){
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-portfolio-img-wrap:nth-child(2){
+       display: none;
+    }
+
+
+    /*-------- START OF ABOUT ME SECTION --------*/
+
+    .about-tagline{
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .specialties-list{
+        font-size: 1.4rem;
+        margin-top: 15px;
+        margin-bottom: 9px;
+    }
+
+    .specialties-wrap{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 50%;
+    }
+
+    .specialty{
         font-size: .9rem;
+        padding: 10px;
+    }
+
+    .about-section-divide{
+        margin-top: 80px;
+    }
+
+
+    /*-------- START OF PORTFOLIO SECTION --------*/
+    .project-thumbnail-img{
+        width: 100%;
+        height: 400px;
+    }
+
+
+    /*-------- START OF CONTACT SECTION --------*/
+    input,
+    textarea{
+        margin-top: 7px;
+        font-size: 1.2rem;
+        padding: 8px;
+        width: 100%;
+        border: rgba(51, 51, 51, 0.486) solid 1px;
+    }
+
+    .contact-title{
+        font-size: 1.8rem;
+        font-weight: 300;
+        padding-top: 50px;
+        margin-bottom: 1px;
+        text-align: center;
+        color: white;
     }
     
-    .project-thumbnail-img.sca-shopify-thumbnail{
-        width: 330px;
-    }  
+    .contact-opener{
+        font-size: 1.2rem;
+        font-weight: 100;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.801);
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    /*-------- START OF HERO SECTION --------*/
+    .hero{
+        margin-top:50px;
+        margin-bottom: 150px;
+    }
+
+    .hero-container{
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-name{
+        font-size: 3.6rem;
+        font-weight: 800;
+        text-align: center;
+        animation: hero-name .8s forwards 0s linear;
+    }
+
+    @keyframes hero-name{
+        0%{
+            transform: rotate(0) translateX(-200px);
+            opacity: 0;
+            }
+        100%{
+            transform: rotate(0) translateX(0);
+            opacity: 1;
+            }
+    }
+
+    .hero-bio-intro{
+        font-size: 1.6rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+    /*-------- ABOUT ME SECTION STYLES -----*/
+    .specialties-wrap{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 50%;
+    }
+
+
+    /*--------PORTFOLIO SECTION STYLES -----*/
+
+    .project-btns-wrap{
+        display: flex;
+    }
+    
+    .project-btn{
+        padding: 10px 31px;
+        color:#e26e95;
+        border: solid 1px #e26e95 ;
+        background-color: transparent;
+        margin: 3px 20px;
+        font-size: 1rem;
+        box-shadow: 0 1px 3px rgba(179, 178, 178, 0.12), 0 1px 2px rgba(121, 118, 118, 0.24);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .project-thumbnail-img{
+        width: 100%;
+        height: 320px;
+    }
+    
+        .hero{
+        margin-top:50px;
+        margin-bottom: 150px;
+    }
+
+    .hero-container{
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-name{
+        font-size: 3.6rem;
+        font-weight: 800;
+        text-align: center;
+        animation: hero-name .8s forwards 0s linear;
+    }
+
+    @keyframes hero-name{
+        0%{
+            transform: rotate(0) translateX(-200px);
+            opacity: 0;
+            }
+        100%{
+            transform: rotate(0) translateX(0);
+            opacity: 1;
+            }
+    }
+
+    .hero-bio-intro{
+        font-size: 1.6rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+}
+
+
+@media (max-width: 320px){
+
+
+    .hero-name{
+        font-size: 3.6rem;
+        font-weight: 800;
+        text-align: center;
+        animation: hero-name .8s forwards 0s linear;
+    }
+
+    @keyframes hero-name{
+        0%{
+            transform: rotate(0) translateX(-200px);
+            opacity: 0;
+            }
+        100%{
+            transform: rotate(0) translateX(0);
+            opacity: 1;
+            }
+    }
+
+    .hero-bio-intro{
+        font-size: 1.6rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .portfolio-img{
+        width: 210px;
+        height:210px;
+        z-index: 1;
+        border-radius: 40%;
+        animation: portfolio-img 1s forwards 0s ease-in-out;
+    }
+
+
+    .contact-me-btn{
+        padding: 20px 25px;
+        font-size: 1.1rem;
+        background-color: #f8049c;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s ease-in-out;
+        margin-right: 20px;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .contact-me-btn:hover{
+        background-color: #fdd54f;
+        box-shadow: 0 14px 28px rgba(160, 157, 157, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .view-portfolio-btn{
+        border: 2px solid #f8049c;
+        background-color: white;
+        padding: 20px 25px;
+        font-size: 1.1rem;
+        color: #f8049c;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s ease-in-out;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .view-portfolio-btn:hover{
+        border: 2px solid #fdd54f;
+        color: #fdd54f;
+        box-shadow: 0 14px 28px rgba(160, 157, 157, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }   
+    
+    
+    /*-------- START OF ABOUT ME SECTION --------*/
+
+    .about-tagline{
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .specialties-list{
+        font-size: 1.4rem;
+        margin-top: 15px;
+        margin-bottom: 9px;
+    }
+
+
+    /*-------- START OF PORTFOLIO SECTION --------*/
+
+    .project-thumbnail-img{
+        width: 100%;
+        height: 220px;
+    }
+
+
 }
