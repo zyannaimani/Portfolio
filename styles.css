@@ -153,7 +153,7 @@ nav{
 /*-------- START OF ABOUT ME SECTION --------*/
 
     .about-tagline{
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         font-weight: 500;
         margin-top: 80px;
         margin-bottom: 20px;
@@ -254,7 +254,7 @@ nav{
 }
 
 .contact-title{
-    font-size: 3.7rem;
+    font-size: 3rem;
     font-weight: 300;
     padding-top: 50px;
     margin-bottom: 1px;
@@ -326,6 +326,17 @@ footer{
 .footer-copyright{
     padding: 20px;
     float: right;
+}
+
+
+/*-------- MEDIA QUERIES --------*/
+
+@media (max-width: 1824px) {
+    .container{
+        width: 70vw;
+        margin: auto;
+    }
+    
 }
 
 
