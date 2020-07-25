@@ -239,7 +239,7 @@ nav{
     }
 
     .project-thumbnail-img{
-        width: 100%;
+        width: 90%;
         height: 530px;
     }
 
@@ -263,6 +263,7 @@ nav{
         color: white;
         box-shadow: 0 14px 28px rgba(173, 173, 173, 0.25), 0 10px 10px rgba(141, 141, 141, 0.22);
     }
+
 
 
 /*-------- CONTACT SECTION STYLES --------*/
